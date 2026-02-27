@@ -476,6 +476,29 @@ img{
     margin-bottom: 1.5rem;
 }
 
+/* Legend above menu showing availability */
+.menu__legend{
+  display:flex;
+  gap: .75rem;
+  justify-content:center;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+.legend__sticker{
+  display:inline-flex;
+  align-items:center;
+  gap:.5rem;
+  padding:.45rem .9rem;
+  border-radius:999px;
+  font-weight:700;
+  color:#fff;
+  font-size:.95rem;
+  box-shadow: 0 6px 18px rgba(3,74,40,.12);
+}
+.legend__sticker i{ font-size:1.15rem; opacity:.95 }
+.legend__sticker.veg{ background: linear-gradient(135deg,#43d17d,#2fa86e); border: 1px solid rgba(255,255,255,.08); }
+.legend__sticker.nonveg{ background: linear-gradient(135deg,#ff8a65,#d94a3a); border: 1px solid rgba(255,255,255,.08); }
+
 .menu__figure {
     text-align: center;
     margin: 0;
@@ -489,6 +512,7 @@ img{
   border-radius: .5rem;
   box-shadow: 0 2px 4px rgba(3,74,40,.15);
   padding: .75rem;
+  padding-top: 1.25rem;
   min-height: 86px;
 }
 
@@ -582,6 +606,22 @@ img{
   display: block;
   padding: 6px;
 }
+
+/* Veg / Non-Veg sticker */
+.sticker{
+  position: absolute;
+  top: .6rem;
+  left: .6rem;
+  padding: .2rem .5rem;
+  border-radius: 999px;
+  font-size: .75rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+.sticker.veg{ background: #27ae60; }
+.sticker.nonveg{ background: #c0392b; }
 
 .menu__quote {
     display: block;
