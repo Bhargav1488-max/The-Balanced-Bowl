@@ -524,6 +524,54 @@ img{
   border-radius: .5rem 0 .5rem 0;
 }
 
+.menu__item-icon{
+  color: var(--first-color);
+  font-size: 1.6rem;
+  margin-bottom: .5rem;
+  margin-right: .6rem;
+  display: inline-block;
+  vertical-align: middle;
+  align-self: flex-start;
+}
+
+/* New emoji symbol badges for menu items */
+.menu__symbol{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  color: #fff;
+  font-size: 1.05rem;
+  margin-right: .6rem;
+  flex-shrink: 0;
+}
+
+.menu__container .menu__content:nth-child(1) .menu__symbol{ background: #FF7A59; }
+.menu__container .menu__content:nth-child(2) .menu__symbol{ background: #6FCF97; }
+.menu__container .menu__content:nth-child(3) .menu__symbol{ background: #FFD166; }
+.menu__container .menu__content:nth-child(4) .menu__symbol{ background: #7AC7FF; }
+.menu__container .menu__content:nth-child(5) .menu__symbol{ background: #F78DA7; }
+.menu__container .menu__content:nth-child(6) .menu__symbol{ background: #B39CFF; }
+.menu__container .menu__content:nth-child(7) .menu__symbol{ background: #FF7A59; }
+.menu__container .menu__content:nth-child(8) .menu__symbol{ background: #6FCF97; }
+.menu__container .menu__content:nth-child(9) .menu__symbol{ background: #FFD166; }
+.menu__container .menu__content:nth-child(10) .menu__symbol{ background: #7AC7FF; }
+.menu__container .menu__content:nth-child(11) .menu__symbol{ background: #F78DA7; }
+.menu__container .menu__content:nth-child(12) .menu__symbol{ background: #B39CFF; }
+.menu__container .menu__content:nth-child(13) .menu__symbol{ background: #FF7A59; }
+.menu__container .menu__content:nth-child(14) .menu__symbol{ background: #6FCF97; }
+.menu__container .menu__content:nth-child(15) .menu__symbol{ background: #FFD166; }
+.menu__container .menu__content:nth-child(16) .menu__symbol{ background: #7AC7FF; }
+.menu__container .menu__content:nth-child(17) .menu__symbol{ background: #F78DA7; }
+.menu__container .menu__content:nth-child(18) .menu__symbol{ background: #B39CFF; }
+.menu__container .menu__content:nth-child(19) .menu__symbol{ background: #FF7A59; }
+.menu__container .menu__content:nth-child(20) .menu__symbol{ background: #6FCF97; }
+.menu__container .menu__content:nth-child(21) .menu__symbol{ background: #FFD166; }
+.menu__container .menu__content:nth-child(22) .menu__symbol{ background: #7AC7FF; }
+.menu__container .menu__content:nth-child(23) .menu__symbol{ background: #F78DA7; }
+.menu__container .menu__content:nth-child(24) .menu__symbol{ background: #B39CFF; }
+
 .menu__look {
   width: 100%;
   height: 140px;
