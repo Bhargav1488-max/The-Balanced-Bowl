@@ -607,6 +607,33 @@ img{
   padding: 6px;
 }
 
+/*========== BENEFITS ==========*/
+.benefits__container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+.benefit__item{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: var(--container-color);
+  padding: 1rem;
+  border-radius: .6rem;
+  box-shadow: 0 8px 20px rgba(3,74,40,.04);
+}
+.benefit__icon{
+  font-size: 1.45rem;
+  color: var(--first-color);
+  margin-bottom: .5rem;
+  display: inline-block;
+}
+.benefit__title{ margin: 0 0 .35rem 0; font-size: 1rem; color: var(--title-color); }
+.benefit__text{ margin: 0; color: var(--text-color); font-size: .95rem; line-height:1.45 }
+
+
 /* Veg / Non-Veg sticker */
 .sticker{
   position: absolute;
