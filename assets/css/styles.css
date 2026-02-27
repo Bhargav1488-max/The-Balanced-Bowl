@@ -327,6 +327,138 @@ img{
   padding: 0 1.5rem;
 }
 
+/*========== SUBSCRIPTION (new) ==========*/
+.subscription__container{
+  align-items: center;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.subscription__data{
+  background: linear-gradient(180deg, rgba(6,156,84,0.04), rgba(6,156,84,0.02));
+  padding: 1.25rem;
+  border-radius: .75rem;
+  box-shadow: 0 6px 18px rgba(6,156,84,0.06);
+}
+
+.subscription__data p{ margin-bottom: .75rem; }
+
+.subscription__list{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: .5rem 1rem;
+  margin: .75rem 0;
+}
+
+.subscription__list li{
+  position: relative;
+  padding-left: 1.6rem;
+  color: var(--text-color);
+}
+
+.subscription__list li::before{
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--first-color);
+  font-weight: 700;
+}
+
+.subscription__imgwrap{ justify-self: center; }
+.subscription__img{ width: 320px; border-radius: .75rem; box-shadow: 0 8px 24px rgba(3,74,40,.12); }
+
+.subscription__ctas{ margin-top: 1rem; display: flex; gap: .75rem; flex-wrap: wrap; }
+.subscription__ctas .button{ padding: .6rem .9rem; }
+.button.secondary{ background: transparent; color: var(--first-color); border: 2px solid rgba(6,156,84,.12); }
+.button.secondary:hover{ background: rgba(6,156,84,.06); }
+
+.subscription__note{ margin-top: .5rem; font-size: .9rem; color: var(--text-color-light); }
+
+/* Features inside subscription */
+.subscription__features{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .75rem 1rem;
+  margin: .75rem 0 1rem;
+}
+
+.feature__item{
+  display: flex;
+  gap: .75rem;
+  align-items: flex-start;
+  background: rgba(6,156,84,.03);
+  padding: .6rem;
+  border-radius: .5rem;
+}
+
+.feature__icon{
+  font-size: 1.6rem;
+  color: var(--first-color);
+  min-width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  background: rgba(6,156,84,.12);
+  border-radius: .5rem;
+}
+
+.feature__title{ font-size: .95rem; margin: 0; color: var(--title-color); }
+.feature__text{ margin: .25rem 0 0; font-size: .875rem; color: var(--text-color); }
+
+.subscription__lead{ margin-top: .5rem; font-weight: 600; }
+
+.goals__chips{ display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.5rem; }
+.chip{ background: rgba(6,156,84,.08); color: var(--first-color); padding:.35rem .6rem; border-radius: 999px; font-size:.85rem; }
+
+@media screen and (max-width: 767px){
+  .subscription__features{ grid-template-columns: 1fr; }
+}
+
+@media screen and (min-width: 768px){
+  .subscription__container{ grid-template-columns: 1fr 360px; align-items: center; }
+  .subscription__list{ grid-template-columns: 1fr 1fr; }
+}
+
+/* Subscription plans column */
+.subscription__plans{
+  display: grid;
+  gap: 1rem;
+  justify-self: center;
+}
+
+.plan-card{
+  background: var(--container-color);
+  border-radius: .75rem;
+  padding: 1rem;
+  box-shadow: 0 8px 20px rgba(3,74,40,.06);
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  width: 320px;
+}
+
+.plan-header{ display:flex; justify-content:space-between; align-items:center; }
+.plan-header h4{ margin:0; font-size:1.05rem; color:var(--title-color); }
+.plan-sub{ font-size:.85rem; color:var(--text-color); }
+
+.plan-price{ font-size:1.5rem; color:var(--first-color); font-weight:700; }
+.plan-price small{ font-size:.7rem; color:var(--text-color); font-weight:500; margin-left:.3rem; }
+
+.plan-features{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:.5rem; }
+.plan-features li{ display:flex; align-items:center; gap:.5rem; color:var(--text-color); }
+.plan-features i{ color:var(--first-color); font-size:1rem; }
+
+.plan-card .button{ align-self:flex-start; }
+
+.plan-monthly{ background: linear-gradient(180deg, rgba(6,156,84,0.03), rgba(6,156,84,0.01)); border: 1px solid rgba(6,156,84,.08); }
+
+@media screen and (min-width:768px){
+  .subscription__container{ grid-template-columns: 1fr 380px; }
+  .subscription__plans{ grid-auto-rows: min-content; }
+}
+
+
 /*========== MENU ==========*/
 .menu__container{
   grid-template-columns: repeat(2, 1fr);
